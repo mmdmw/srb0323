@@ -21,11 +21,13 @@ public class MybatisPlusApplicationTests {
 
     @Test
     public void test03(){
+        for (int i = 0; i < 20 ; i++) {
         User user = new User();
-        user.setUsername("马克");
-        user.setAge(18);
-        user.setEmail("123456@qq.com");
+        user.setUsername("mary"+(int)(Math.random()*100+i));
+        user.setAge((int)(Math.random()*100));
+        user.setEmail((int)(Math.random()*10000000)+"@qq.com");
         userMapper.insert(user);
+        }
     }
 
     @Test

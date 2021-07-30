@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @TableName("user")
 public class User {
 
-    @TableId("id")
+    @TableId(type = IdType.ASSIGN_ID)
     private Long id;
     @TableField("username")
     private String username;

@@ -11,6 +11,9 @@
 
     <modules>
         <module>mybatis-plus</module>
+        <module>guigu-common</module>
+        <module>service-core</module>
+        <module>service-base</module>
     </modules>
 
     <parent>
@@ -192,6 +195,5 @@
 
         </dependencies>
     </dependencyManagement>
-
 
 </project>
